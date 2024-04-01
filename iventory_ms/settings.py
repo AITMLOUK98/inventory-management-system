@@ -13,12 +13,14 @@ SECRET_KEY = 'django-insecure-r=n&t_53b)llxob$oedgs8f0n21s)($ke_0+r!g#a(0z7^#5q-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,6 +60,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'iventory_ms.wsgi.application'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "IVENTORY MS",
+    "site_header": "VENTORY MS ADMIN",
+}
 
 
 # Database
